@@ -1,0 +1,52 @@
+.card {
+    padding-bottom: 20px;
+    text-align: start;
+    box-shadow: 2px -1px 17px -1px rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+
+    &ImgBox {
+        width: 100%;
+
+        img {
+            height: 300px;
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+
+    }
+
+    span {
+        color: #6C6C72;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    p {
+        margin: 10px 0;
+        color: #6C6C72;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    a {
+        color: #5851EA;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: left;
+
+    }
+
+    &Body {
+        padding: 10px;
+    }
+}
