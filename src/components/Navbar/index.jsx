@@ -2,10 +2,12 @@ import React,  {useState} from 'react'
 
 import { NavLink, Outlet} from 'react-router-dom'
 
-import { Container,Box , List, ListItme, Btn, Logo, Logojon, Nav, NavLeft, NavRight, Selekt} from './style.jsx'
+import { Container,Box , List, ListItme, Btn, Logo, Logojon, Nav, NavLeft, NavRight, Selekt, Link} from './style.jsx'
 import Download from '../Download/index.jsx'
 // import Logojon  from '../../assets/img/logo.png'
 
+import Pochta from "../../assets/icons/mail-fill.png"
+import Telifon from "../../assets/icons/phone-fill.png"
 
 const Navbar = () => {
   
@@ -17,6 +19,7 @@ const  ButtonClik=()=>{
 }
 
 
+
   return (
      <div>
         <Container>
@@ -25,22 +28,24 @@ const  ButtonClik=()=>{
         
           <Nav>
             <NavLeft>
-
+              <img src={Pochta} width={18} alt="" />
+              <Link href="#">Info@youremail.com</Link>
             </NavLeft>
 
             <NavRight>
-              
+            <img src={Telifon} width={18} alt="" />
+            <Link href="#">+998 __ --- -- --</Link>
             </NavRight>
           </Nav>
 
         <List>
-          <ListItme>  Home </ListItme>
-          <ListItme>  About </ListItme>
+          <ListItme>  Home     </ListItme>
+          <ListItme>  About    </ListItme>
           <ListItme>  Features </ListItme>
 
           <ListItme className='logojon'> 
             <span> </span> 
-             <Logo src={Logojon} alt="" />
+             <Logo src={Logojon}   alt="" />
           </ListItme>
 
 

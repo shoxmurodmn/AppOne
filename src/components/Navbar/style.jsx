@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Button, Dropdown, Flex } from 'antd';
-import Logojon  from '../../assets/img/logo.png';
+import Logojon  from '../../assets/img/KIDSUPLOGO2png.png';
 
 const Container = styled.div`
     
@@ -9,7 +9,7 @@ const Container = styled.div`
     max-width: 1200px;
     width:100%;
     margin: 0 auto;
-    margin-top :50px;
+    margin-top :10px;
     position: fixed;
     left:50%;
     transform: translateX(-50%);
@@ -58,25 +58,31 @@ const Btn = styled(Button)`
 `
 const Logo= styled.img`
 
-    width: 200px;
+    height: 80px;
     border-radius: 5px 0px 0px 0px;
-    opacity: 0px;
+    
     position: absolute;
-    top:50%;
+    top:80%;
     left:50%;
     transform:translate(-50%, -50%);
 
 `
 
 const Nav = styled.nav`
-    
+    display: flex;
+    margin-bottom: 10px;
 `
 const NavLeft = styled.nav`
-    
+    display: flex;
+    align-items: center;
+    gap: 8px;
 `
 
 const NavRight = styled.nav`
-    
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 `
 
 const Pochta = styled.div`
@@ -89,8 +95,20 @@ const Selekt = styled.div`
     position: absolute;
     left: 50%;
     top: 130%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
     
 `
+const  Link = styled.a`
+   
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+   
 
-export { Container, Box ,List, ListItme, Btn , Logo, Logojon, Nav, NavLeft, NavRight, Selekt}
+`
+
+
+export { Container, Box ,List, ListItme, Btn , Logo, Logojon, Nav, NavLeft, NavRight, Selekt,Link}
