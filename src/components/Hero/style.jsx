@@ -4,8 +4,11 @@ import imgUre from "../../assets/img/BackgroundImage.png"
 
     const  Wrapper =styled.div`
         height: 125vh;
+        width: 100%;
         background-image: url(${imgUre});
         padding-top:120px;
+        background-repeat:no-repeat;
+        background-position: center;    
 
     `
 

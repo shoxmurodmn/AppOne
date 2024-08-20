@@ -1,8 +1,9 @@
-import React,  {useState} from 'react'
+import React,  {useState, useEffect} from 'react'
 
 import { NavLink, Outlet} from 'react-router-dom'
 
 import { Container,Box , List, ListItme, Btn, Logo, Logojon, Nav, NavLeft, NavRight, Selekt, Link} from './style.jsx'
+import "./index.css"
 import Download from '../Download/index.jsx'
 // import Logojon  from '../../assets/img/logo.png'
 
@@ -12,6 +13,26 @@ import Telifon from "../../assets/icons/phone-fill.png"
 const Navbar = () => {
   
 const [count, setCount ] = useState(false)
+
+const [shrink, setShrink] = useState(false);
+
+useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) { // 50px dan ko'p skroll qilingan bo'lsa
+        setShrink(true);
+        
+      } else {
+        setShrink(false);
+        
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   
 const  ButtonClik=()=>{
 
@@ -26,7 +47,7 @@ const  ButtonClik=()=>{
         <Box>
 
         
-          <Nav>
+          <Nav className ={shrink?"none":  "flex"}>
             <NavLeft>
               <img src={Pochta} width={18} alt="" />
               <Link href="#">Info@youremail.com</Link>

@@ -19,13 +19,15 @@ const AppFgCart = ({ props, name }) => {
     
   })
 
+  console.log(window.innerWidth)
+
 
   return (
     <>
       {appFungtion.map((item) => {
         return (
           <div>
-            { item.name == 'chat' ? <div>
+            { item.name == name ? <div>
               <Container align={props}>
                 <Svg>
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +37,7 @@ const AppFgCart = ({ props, name }) => {
 
                 <Info align={props}>
                   <h3 className='titleInfo'>
-                    {item .Imgurel}
+                    {item.Title}
                   </h3>
                   <p className='description'>
                     Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, sit!

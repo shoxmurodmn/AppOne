@@ -1,19 +1,21 @@
 import styled from "styled-components";
 import { Button, Dropdown, Flex } from 'antd';
 import Logojon  from '../../assets/img/KIDSUPLOGO2png.png';
+import { logDOM } from "@testing-library/react";
 
 const Container = styled.div`
     
     height: 60px;
     
     max-width: 1200px;
-    width:100%;
+    width:96%;
     margin: 0 auto;
     margin-top :10px;
     position: fixed;
     left:50%;
     transform: translateX(-50%);
-
+    transition: all 1s ease;
+    
 
 `
 const Box = styled.div`
@@ -41,6 +43,7 @@ const List = styled.ul`
     align-items: center;
     justify-content: space-between;
     background-color: var(--colorPrimary);
+    transition: all .5s ease;
 
 `
 
@@ -69,8 +72,10 @@ const Logo= styled.img`
 `
 
 const Nav = styled.nav`
+   
     display: flex;
     margin-bottom: 10px;
+    transition: all .5s ease;
 `
 const NavLeft = styled.nav`
     display: flex;
