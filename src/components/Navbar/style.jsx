@@ -4,6 +4,7 @@ import Logojon  from '../../assets/img/KIDSUPLOGO2png.png';
 import { logDOM } from "@testing-library/react";
 
 const Container = styled.div`
+z-index:100;
     
     height: 60px;
     

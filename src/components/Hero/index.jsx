@@ -13,7 +13,7 @@ const Hero = () => {
   return (
      <Wrapper>
         <Container>
-          <Box>
+          <Box data-aos="fade-right" >
               <H1> A Great App Makes
               Your Life Better</H1>
           
@@ -30,7 +30,7 @@ const Hero = () => {
             </DownloadSection>
           </Box>
 
-          <div>
+          <div data-aos="fade-down">
               <img src={MObilPhone} height={646} alt="" />
           </div>
         </Container>
