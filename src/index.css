@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 *{
