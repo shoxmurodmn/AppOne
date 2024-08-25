@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from './style'
+import { Container , ImgD} from './style'
 import Playmarket from "../../assets/img/paymarket.png"
 import AppStore from "../../assets/img/appstore.png"
 
@@ -16,12 +16,12 @@ const Download = ({prop}) => {
         <Container props={prop}>
           <div>
             <a href="#">
-             <img src={Playmarket} alt="" />
+             <ImgD src={Playmarket} alt="" />
             </a>
           </div>
           <div>
             <a href="#">
-              <img src={AppStore} alt="" />
+              <ImgD src={AppStore} alt="" />
             </a>
           </div>
         

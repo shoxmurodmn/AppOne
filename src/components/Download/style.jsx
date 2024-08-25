@@ -9,10 +9,22 @@ const Container = styled.div`
  
   column-gap:14px;
 
+  @media (max-width: 680px) {
+        width: 230px;
+      };
+    
+
+`
+const ImgD = styled.img`
+  width: 149px;
+
+  @media (max-width: 680px) {
+        width: 108px;
+      };
 
 `
 
 
 
 
-export { Container, }
+export { Container,ImgD}

@@ -3,7 +3,7 @@ import AboutCart from '../AboutCart'
 
 import MObilPhone from "../../assets/img/phone.png"
 
-import {Wrapper , Container ,Box,H1, DownloadSection } from './style'
+import {Wrapper , Container ,Box,H1, DownloadSection , Img} from './style'
 import Download from '../Download'
 
 
@@ -31,7 +31,7 @@ const Hero = () => {
           </Box>
 
           <div data-aos="fade-down">
-              <img src={MObilPhone} height={646} alt="" />
+              <Img src={MObilPhone} height={646} alt="" />
           </div>
         </Container>
 
